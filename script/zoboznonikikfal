@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+status=`../bots/zoboznonikikfal`
+curl -u zoboznonikikfal:zoboznon -d "status=$status" http://twitter.com/statuses/update.json > /dev/null
+echo $status
